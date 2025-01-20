@@ -2,6 +2,9 @@ add_rules("mode.debug", "mode.release")
 
 add_repositories("liteldev-repo https://github.com/LiteLDev/xmake-repo.git")
 
+set_allowedplats("windows")
+set_allowedarchs("x64")
+
 if not has_config("vs_runtime") then
     set_runtimes("MD")
 end
